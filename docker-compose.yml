@@ -8,4 +8,5 @@ services:
     tty: true
     volumes:
       - ./src:/root/src
-      - ./videos:/root/videos
+      - ./inputs:/root/inputs
+      - ./outputs:/root/outputs
