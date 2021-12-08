@@ -1,0 +1,11 @@
+version: "3"
+services:
+  video_editor:
+    build: .
+    image: "video_editor"
+    container_name: "video_editor"
+    working_dir: "/root/"
+    tty: true
+    volumes:
+      - ./src:/root/src
+      - ./videos:/root/videos
