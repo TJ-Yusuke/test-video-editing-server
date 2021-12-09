@@ -12,7 +12,6 @@ ENV TZ JST-9
 ENV TERM xterm
 
 RUN apt-get install -y vim less
-
 RUN apt-get install build-essential
 RUN wget https://www.imagemagick.org/download/ImageMagick.tar.gz
 RUN tar xvzf ImageMagick.tar.gz
@@ -26,3 +25,7 @@ RUN cd ../../ && rm -rf  ImageMagick*
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN python -m pip install moviepy
+
+# 日本語対応のフォント追加
+RUN apt-get install -y fonts-takao-gothic
+RUN apt-get install -y fonts-takao-mincho
