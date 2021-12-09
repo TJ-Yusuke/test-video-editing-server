@@ -5,6 +5,8 @@ services:
     image: "video_editor"
     container_name: "video_editor"
     working_dir: "/root/"
+    env_file:
+      - .env
     tty: true
     volumes:
       - ./src:/root/src
