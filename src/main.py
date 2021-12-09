@@ -11,6 +11,7 @@ print("ダウンロード完了")
 
 clip = VideoFileClip("./inputs/downloaded_countdown.mp4").subclip(0, 7)
 
+# osに搭載されているフォントしか使えないので追加で使うときはインストールする必要がある
 txt_clip = TextClip("テイクオフ！", font="Takao-Pゴシック", color="white", fontsize=120)
 txt_clip = txt_clip.set_position("center").set_duration(4)
 
